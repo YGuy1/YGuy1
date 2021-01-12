@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<link rel = "stylesheet"type = "text/css"href = "style2.css" />
+
+	<title>Yusuf's Resturant</title>
+	
+<ul>
+	<li><a href="Index.html">Home</a></li>
+	<li><a href="menu.html">Menu</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+</ul>
+	
+	<h1> Gallery </h1>
+	<h2><u> Have a Gander at some of our best selling items </u></h2>
+	
+
+
+  <section>
+  <center>
+   <img class="slides" src="images/burger.jpg" alt="burger" style="width:60%"height="50%" class="center">
+   <img class="slides" src="images/pizza.jpg" alt="pizza" style="width:60%"height="50%" class="center">
+   <img class="slides" src="images/wings.jpg" alt="wings" style="width:60%"height="50%" class="center">
+   <img class="slides" src="images/brownies.jpg" alt="brownies" style="width:60%"height="50%" class="center">
+   
+  <!-- Got the images from "Creative Commons" -->
+ 
+  
+  <script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); 
+}
+  </script>
+  
+	</center>
+  </section>
+  </body>

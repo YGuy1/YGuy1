@@ -1,0 +1,73 @@
+h1
+{
+  color: black;
+  font-family: Lucida Handwriting;
+  background-color: dodgerblue;
+  text-align: center;
+  font-size: 500%;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+h2
+{
+  color: black;
+  font-family: Lucida Handwriting;
+  text-align: center;
+  font-size: 300%;
+}
+
+body
+{
+  background-color: brown;
+}
+
+ul
+{
+  list-style-type: none;
+  border: 5% solid black;
+  margin: 0px;
+  padding: 0;
+  width: 13%;
+  background-color: dodgerblue;
+  border-radius: 4%;
+  position: fixed;
+  margin-top: 150px;
+}
+
+li a
+{
+  display: block;
+  text-align: center;
+  font-size: 200%;
+  font-family: Lucida Console;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  width: 92%;
+  height: 100%;
+  color: black;
+  padding: 50px 8px;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+li a:hover
+{
+  background-color: black;
+  border-radius: 5%;
+  border-bottom: 6px solid red;
+  width: 93%;
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+

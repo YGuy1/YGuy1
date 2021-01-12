@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<link rel = "stylesheet"type = "text/css"href = "style1.css" />
+
+	<title>Yusuf's Resturant</title>
+	
+<ul>
+	<li><a href="Index.html">Home</a></li>
+	<li><a href="menu.html">Menu</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+</ul>	
+	
+	<h1> Our Menu </h1>
+	<h2><u> Enjoy perusing our Cuisine! </u></h2>
+	
+
+<h4> Mains </h4>
+<h3> Peri Peri Chicken Burger - €5.95<br> make it a meal - €7.95</h3><br>
+<h3> Grilled Chicken Burger - €6.50<br> make it a meal - €8.50 </h3><br>
+<h3> Beef Mince Burger - €7.20<br> make it a meal - €9.20 </h3><br>
+<h3> 12' inch Pizza with any two toppings - €10.00<br> extra toppings - €1.20 each </h3><br>
+<h3> 16' inch Pizza with any two toppings - €15.00<br> extra toppings - €1.20 each </h3><br>
+<h3> 6 Buffalo Wings - €5.00<br> 12 for €9.00 </h3><br>
+<h4> Desserts </h4>
+<h3> Sticky Toffee Pudding - €4.00</h3><br>
+<h3> Chocolate Fudge Cake - €4.50</h3><br>
+<h3> Brownies - €3.50</h3><br>
+<h4> Drinks </h4>
+<h3> Coke<br>Pepsi<br>Sprite<br>Fanta<br><br>€1.50 each<br></h3>
+
+
+
+<head> 
+      <script> 
+         
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+        
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+        
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+	  
+	  </head> 
+  
+   <body> <center>
+      <div class = title ><b><u>Price of your Order</u></b></div> 
+      <table border="1"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+           
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+      
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+         </tr> 
+		 </center>
+      </table> 
+   </body> 
+	  
+	  
+	  
+	  
